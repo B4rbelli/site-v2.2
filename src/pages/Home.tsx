@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import CookieConsent from '../components/CookieConsent';
 import ParticleBackground from '../components/ParticleBackground';
-import { ModalContatoProvider } from '../components/ModalContato'; // <- importante
+import { ModalContatoProvider } from '../components/ModalContatoProvider'; // <- importante
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import { Server } from 'lucide-react';
-import { useModalContato } from './ModalContato';
+import { useModalContato } from './ModalContatoProvider';
 
 export default function Navbar() {
   const { abrir } = useModalContato();

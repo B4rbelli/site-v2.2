@@ -1,3 +1,4 @@
+// ModalContatoProvider.tsx
 import { createContext, useContext, useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -36,7 +37,8 @@ export function ModalContatoProvider({ children }: { children: React.ReactNode }
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white rounded-2xl p-6 w-full max-w-lg relative shadow-xl"
+              className="bg-white rounded-2xl p-6 w-full max-w-lg shadow-xl relative overflow-y-auto"
+              style={{ maxHeight: 'calc(100vh - 60px)' }}
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
@@ -54,21 +56,24 @@ export function ModalContatoProvider({ children }: { children: React.ReactNode }
               <p className="text-gray-600 mb-6 text-center text-sm">
                 Envie sua dúvida, proposta ou sugestão. Retornaremos o mais breve possível.
               </p>
-              <Formulario cor="purple" />
+              <Formulario cor="bg-purple-600" />
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
+
       {/* Botão flutuante */}
       <div className="fixed top-20 right-6 z-40">
         <button
+          type="button"
           onClick={abrir}
           className="bg-purple-600 text-white p-4 rounded-full shadow-lg hover:bg-purple-700 transition-all"
           title="Fale Conosco"
         >
           <MessageCircle className="w-6 h-6 animate-pulse" />
         </button>
+
       </div>
     </ModalContatoContext.Provider>
   );
