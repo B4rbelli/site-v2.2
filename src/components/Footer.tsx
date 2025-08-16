@@ -16,7 +16,7 @@ export default function Footer() {
               virtualização, desenvolvimento, documentação técnica e muito mais para empresas de todos os tamanhos.
             </p>
             <p className="text-gray-400">
-              © {new Date().getFullYear()} SBTech&Support. Todos os direitos reservados.
+              © {new Date().getFullYear()} Secure Bridge Technology. Todos os direitos reservados.
             </p>
           </div>
 
@@ -36,10 +36,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>comercial@sbtechsupport.com.br</li>
+              <li>comercial@securebridge.com.br</li>
               <li>(92) 98510-4616</li>
               <li>Manaus, AM</li>
-              <li>www.sbtechsupport.com.br</li>
+              <li>www.securebridge.com.br</li>
             </ul>
           </div>
         </div>

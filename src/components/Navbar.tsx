@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <Server className="h-8 w-8 text-purple-600 animate-pulse" />
-            <h1 className="text-2xl font-bold text-gray-900">SB Tech&Support</h1>
+            <h1 className="text-2xl font-bold text-gray-900">Secure Bridge</h1>
           </div>
           <nav className="hidden md:flex space-x-8">
             <a href="#home" className="text-gray-700 hover:text-purple-600 transition-colors">Início</a>

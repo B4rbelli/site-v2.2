@@ -43,8 +43,8 @@ export default function Contact() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "comercial@sbtechsupport.com.br",
-      link: "mailto:comercial@sbtechsupport.com.br"
+      value: "comercial@securebridge.com.br",
+      link: "mailto:comercial@securebridge.com.br"
     },
     {
       icon: <Phone className="w-6 h-6" />,
