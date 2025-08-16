@@ -1,5 +1,5 @@
-import { Server } from 'lucide-react';
-import { useModalContato } from './ModalContatoProvider';
+import { motion } from "framer-motion";
+import { useModalContato } from "./ModalContatoProvider";
 
 export default function Navbar() {
   const { abrir } = useModalContato();
@@ -9,15 +9,30 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <Server className="h-8 w-8 text-purple-600 animate-pulse" />
+            {/* Logo com efeito Zoom Pulse */}
+            <motion.img
+              src="/logo_sb.png"
+              alt="Secure Bridge Logo"
+              width={50}
+              height={50}
+              className="block"
+              animate={{ scale: [1, 1.15, 1] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
             <h1 className="text-2xl font-bold text-gray-900">Secure Bridge</h1>
           </div>
+
           <nav className="hidden md:flex space-x-8">
             <a href="#home" className="text-gray-700 hover:text-purple-600 transition-colors">Início</a>
             <a href="#services" className="text-gray-700 hover:text-purple-600 transition-colors">Serviços</a>
             <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">Sobre</a>
             <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors">Contato</a>
           </nav>
+
           <button
             onClick={abrir}
             className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
